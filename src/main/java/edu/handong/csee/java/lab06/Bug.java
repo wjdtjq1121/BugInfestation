@@ -2,16 +2,25 @@ package edu.handong.csee.java.lab06; // brings the package
 
 import java.util.Scanner; 
 
+
+/**
+ * This class defines to get the number of weeks which bugs fill the house completely. </br>
+ * First declares growthrate, onebugvolume as final static members.</br>
+ * it has main methods which has all the members and execute while loop to get the number of weeks to fill the house. </br>
+ * @author HAN
+ */
 public class Bug {
 
 	final static double GROWTH_RATE = 0.95;
 	final static double ONE_BUG_VOLUME = 0.002;
-	
-	
-	
-	
-	
-	
+		
+	/**
+	 * This main method declares six input values. </br>
+	 * it declares the scanner keyboard which comes from import statement at the beginning.</br>
+	 * gets two user input values from users and stores them into housevolume and start population members. </br>
+	 * To execute while loop and executes untill the condition is unsatisfied and terminates to get the final number of weeks to fill the house. </br>  
+	 * @author HAN
+	 */
 	public static void main(String[] args) {
 
 		double houseVolume;
@@ -20,7 +29,7 @@ public class Bug {
 		double population;
 		double totalBugVolume;
 		double newBugs;
-		// double BugVolume;
+	
 		
 		Scanner keyboard = new Scanner(System.in);
 		
