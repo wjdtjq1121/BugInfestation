@@ -24,11 +24,11 @@ public class Bug {
 		
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.print("Enter the house volume");
+		System.out.print("Enter the total volume of your house\nin cubic feet: ");
 		houseVolume = keyboard.nextDouble();
 
-		System.out.print("Enter the initial value of roaches");
-		startPopulation = keyboard.nextInt();
+		System.out.print("Enter the estimated number of \nroaches in your house: ");
+		startPopulation = keyboard.nextDouble();
 		
 		population = startPopulation;
 		totalBugVolume = population*ONE_BUG_VOLUME;
@@ -43,9 +43,10 @@ public class Bug {
 			countWeeks++;
 		}
 		
-		System.out.printf("result value. countweeks: %d, totalBug: %f, population: %f", countWeeks, totalBugVolume, population);
-		
-		
+		System.out.printf("Starting with a roach population of %.0f \nand a house with a volume of %.1f cubic feet,\nafter %d weeks, \n", startPopulation, houseVolume, countWeeks);
+		System.out.printf("the house will be filled with %d roaches. \n", (int)population);
+		System.out.printf("They will fill a volume of %.0f cubic feet. \n", totalBugVolume);
+		System.out.printf("Better call Debugging Experts Inc.");
 		
 	}
 
