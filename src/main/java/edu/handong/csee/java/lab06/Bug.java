@@ -1,4 +1,4 @@
-package edu.handong.csee.java.lab06; // brings the package
+package edu.handong.csee.java.lab06; // z
 
 import java.util.Scanner; ; // gets the Scanner class from the package (libarary) java.util
 
@@ -60,3 +60,4 @@ public class Bug { // its a class which can access from other package
 	}
 
 }
+
