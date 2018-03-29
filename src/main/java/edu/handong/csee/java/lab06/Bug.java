@@ -1,4 +1,4 @@
-package edu.handong.csee.java.lab06; // z
+package edu.handong.csee.java.lab06; // Set the package where this class belongs to
 
 import java.util.Scanner; ; // gets the Scanner class from the package (libarary) java.util
 
@@ -52,10 +52,10 @@ public class Bug { // its a class which can access from other package
 			countWeeks++; // gets one more week if while loop executes again
 		}
 		
-		System.out.printf("Starting with a roach population of %.0f \nand a house with a volume of %.1f cubic feet,\nafter %d weeks, \n", startPopulation, houseVolume, countWeeks); // prints user input values, and final countweeks
-		System.out.printf("the house will be filled with %d roaches. \n", (int)population); // prints final population, double type is changed to int by using (int)
-		System.out.printf("They will fill a volume of %.0f cubic feet. \n", totalBugVolume); // prints final bugvolume, double type is not changed but prints 0 decimal which looks like integers.
-		System.out.printf("Better call Debugging Experts Inc."); // prints the result output screen.
+		System.out.println("Starting with a roach population of "+ (int)startPopulation + "\nand a house with a volume of " + (int)houseVolume + " cubic feet,\nafter " + countWeeks + " weeks,"); // prints user input values, and final countweeks
+		System.out.println("the house will be filled with " + (int)population + " roaches."); // prints final population, double type is changed to int by using (int)
+		System.out.println("They will fill a volume of " + (int)totalBugVolume + " cubic feet."); // prints final bugvolume, double type is changed to int.
+		System.out.println("Better call Debugging Experts Inc."); // prints the result output screen.
 		
 	}
 
